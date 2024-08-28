@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hamzah Uzzama</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hamzah Uzzama</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Hamzah Uzzama Headshot.png" alt="Hamzah p" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hamzah Uzzama</h1>
+        <p class="section__text__p2">Aspiring Cybersecurity Professional</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Hamzah Uzzama Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hamzah-uzzama/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/hamzahu1589'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/images.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Information Technology experience</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm currently a junior at Queens College,
+              where I’ve been able to accelerate my academic journey by completing 70 credits
+              in just one year while maintaining a stellar GPA. Before that,
+              I graduated from Townsend Harris High School in three years instead of the traditional four.
+              My dedication and drive have always pushed me to go beyond expectations,
+              and I’m excited to continue this momentum as I progress in my studies and career.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Metasploit</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cybersecurity Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Network security</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Threat intelligence</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Artificial intelligence</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Networking</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/720h_q95.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cybersecurity Intern - AI/ML Focus</h2>
+            <div class="btn-container">
+              
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Accenture-Logo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cybersecurity Program Participant</h2>
+            <div class="btn-container">
+             
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Webacy.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cybersecurity Extern</h2>
+            <div class="btn-container">
+             
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">hamzahuzzama@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hamzah-uzzama/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Hamzah Uzzama. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
